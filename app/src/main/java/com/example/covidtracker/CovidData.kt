@@ -1,11 +1,14 @@
 package com.example.covidtracker
 
 import com.google.gson.annotations.SerializedName
+import java.util.*
 
 data class CovidData(
-    val dateChecked:String,
+    val dateChecked:Date,
     val poitiveIncrease:Int,
      val negativeIncrease: Int,
       val deathIncrease:Int,
      val state:String
 )
+
+
